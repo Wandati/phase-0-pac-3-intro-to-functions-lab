@@ -17,16 +17,16 @@ function logWhisper(string){
 
 }
 function sayHiToHeadphonedRoommate(string){
-    
-    if (string.toUpperCase == true){
-        return("I can't hear you");
-    }else if(string.toLowerCase == true){
-        return  ("YES INDEED!");
-    }else if(string === "Let's have dinner together"){
-        return ("I would love to!");
-
+    if(string == string.toLowerCase()){
+        return "I can't hear you!";
     }
-
-}
-
-
+    
+    if(string == string.toUpperCase()){
+        return "YES INDEED!";
+    }
+    
+    if(string === "Let's have dinner together!"){
+        return "I would love to!";
+    }
+        
+    }
